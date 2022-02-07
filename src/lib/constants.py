@@ -1,6 +1,6 @@
-WIDTH = 360  # width of our game window
-HEIGHT = 480  # height of our game window
-FPS = 30  # frames per second
+WIDTH = 480  # width of our game window
+HEIGHT = 600  # height of our game window
+FPS = 60  # frames per second
 
 # Colors (R, G, B)
 BLACK = (0, 0, 0)
