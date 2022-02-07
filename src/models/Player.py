@@ -1,13 +1,13 @@
-from pygame import sprite, Surface
+import pygame
 
-from lib.constants import GREEN, HEIGHT, WIDTH
+from main import player_img
+from lib.constants import HEIGHT, WIDTH
 
 
-class Player(sprite.Sprite):
+class Player(pygame.sprite.Sprite):
     def __init__(self):
-        sprite.Sprite.__init__(self)
-        self.image = Surface((50, 50))
-        self.image.fill(GREEN)
+        pygame.sprite.Sprite.__init__(self)
+        self.image = player_img
         self.rect = self.image.get_rect()
         self.rect.center = (WIDTH / 2, HEIGHT / 2)
 
